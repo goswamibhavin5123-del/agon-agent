@@ -51,8 +51,8 @@ export async function ensureProfile(user) {
     if (again) return again;
     throw error;
   }
-  await walletApply(user.id, 250, { type: 'credit', description: 'Welcome gift from Astro Venus', reference: `WEL-${user.id}` });
-  await supabase.from('notifications').insert({ user_id: user.id, audience: 'customer', type: 'wallet', title: 'Welcome to Astro Venus', body: '₹250 has been added to your wallet. Your first consultation awaits under the stars.' });
+  await walletApply(user.id, 250, { type: 'credit', description: 'Welcome gift from Astro Rahu', reference: `WEL-${user.id}` });
+  await supabase.from('notifications').insert({ user_id: user.id, audience: 'customer', type: 'wallet', title: 'Welcome to Astro Rahu', body: '₹250 has been added to your wallet. Your first consultation awaits under the stars.' });
   return { ...created, wallet_balance: 250 };
 }
 

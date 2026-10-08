@@ -8,9 +8,9 @@ import type { Role } from '../contexts/AuthContext';
 import { api } from '../lib/api';
 
 const DEMOS = [
-  { label: 'Customer', email: 'demo@astrovenus.com' },
-  { label: 'Astrologer', email: 'astrologer@astrovenus.com' },
-  { label: 'Admin', email: 'admin@astrovenus.com' },
+  { label: 'Customer', email: 'demo@AstroRahu.com' },
+  { label: 'Astrologer', email: 'astrologer@AstroRahu.com' },
+  { label: 'Admin', email: 'admin@AstroRahu.com' },
 ];
 
 /** Only follow ?next= when it is a same-site path the role is allowed to open. */
@@ -77,7 +77,7 @@ export default function Login() {
       <div className="relative hidden lg:flex bg-plum-grad overflow-hidden items-center justify-center p-12">
         <StarField count={70} seed={61} color="#E8CD8A" />
         <div className="relative text-center max-w-md">
-          <div className="mx-auto h-80 w-80 rounded-full p-[3px] bg-gold-grad shadow-2xl"><img src={LOGO} alt="Astro Venus" className="h-full w-full rounded-full object-cover" /></div>
+          <div className="mx-auto h-80 w-80 rounded-full p-[3px] bg-gold-grad shadow-2xl"><img src={LOGO} alt="Astro Rahu" className="h-full w-full rounded-full object-cover" /></div>
           <h2 className="font-serif text-4xl text-white mt-10 italic">“The stars incline, they do not compel.”</h2>
           <p className="text-gold-light/80 mt-4 tracking-[0.3em] text-xs uppercase">Guided by stars · Empowered by you</p>
         </div>
@@ -108,11 +108,11 @@ export default function Login() {
             <button disabled={busy} className="btn btn-rose btn-lg w-full">{busy ? 'Please wait…' : mode === 'in' ? 'Sign in' : 'Create account'}</button>
           </form>
           <div className="flex items-center gap-3 my-6 text-xs text-muted"><span className="h-px flex-1 bg-line" />or<span className="h-px flex-1 bg-line" /></div>
-          <button type="button" onClick={() => { if (!signInWithGoogle('Astro Venus')) toast('Google sign-in is not configured for this deployment.', 'error'); }} className="btn btn-white w-full !py-3 border border-line">
+          <button type="button" onClick={() => { if (!signInWithGoogle('Astro Rahu')) toast('Google sign-in is not configured for this deployment.', 'error'); }} className="btn btn-white w-full !py-3 border border-line">
             <svg viewBox="0 0 24 24" className="h-5 w-5"><path fill="#EA4335" d="M12 10.2v3.9h5.5c-.24 1.4-1.7 4.1-5.5 4.1-3.3 0-6-2.7-6-6.1s2.7-6.1 6-6.1c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3.4 14.6 2.4 12 2.4 6.7 2.4 2.4 6.7 2.4 12s4.3 9.6 9.6 9.6c5.5 0 9.2-3.9 9.2-9.4 0-.6-.07-1.1-.16-1.6H12z" /></svg>
             Continue with Google
           </button>
-          <p className="text-sm text-center text-muted mt-6">{mode === 'in' ? 'New to Astro Venus?' : 'Already have an account?'} <button onClick={() => { setMode(mode === 'in' ? 'up' : 'in'); setErr({}); }} className="text-rose-deep font-medium hover:underline">{mode === 'in' ? 'Create an account' : 'Sign in'}</button></p>
+          <p className="text-sm text-center text-muted mt-6">{mode === 'in' ? 'New to Astro Rahu?' : 'Already have an account?'} <button onClick={() => { setMode(mode === 'in' ? 'up' : 'in'); setErr({}); }} className="text-rose-deep font-medium hover:underline">{mode === 'in' ? 'Create an account' : 'Sign in'}</button></p>
           <p className="text-center mt-4"><Link to="/" className="text-xs text-muted hover:text-plum">← Back to home</Link></p>
         </div>
       </div>

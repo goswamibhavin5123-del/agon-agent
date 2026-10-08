@@ -38,7 +38,7 @@ export default function Admin() {
     { to: '/admin/analytics', label: 'Analytics', icon: BarChart3 },
   ];
   return (
-    <PanelShell items={items} title="Admin Console" subtitle="Astro Venus · Control center" dark
+    <PanelShell items={items} title="Admin Console" subtitle="Astro Rahu · Control center" dark
       topRight={<Link to="/launch-checklist" className="btn btn-gold btn-sm"><FileBarChart className="h-4 w-4" /><span className="hidden sm:inline">Launch checklist</span></Link>}>
       <Routes>
         <Route index element={<Dashboard stats={stats} />} />
@@ -61,7 +61,7 @@ export default function Admin() {
         <Route path="reviews" element={<ReviewsPage />} />
         <Route path="blogs" element={<Crud type="blogs" title="article" query="&all=1" columns={[{ key: 'title', label: 'Title', render: (r) => <div className="flex items-center gap-3"><img src={r.cover} className="h-10 w-14 rounded-lg object-cover" alt="" /><b className="max-w-xs truncate">{r.title}</b></div> }, { key: 'category', label: 'Category' }, { key: 'author', label: 'Author' }, { key: 'created_at', label: 'Date', render: (r) => fmtDate(r.created_at) }, { key: 'published', label: 'Status', render: (r) => <Badge status={r.published ? 'published' : 'hidden'}>{r.published ? 'Published' : 'Draft'}</Badge> }]}
           fields={[{ key: 'title', label: 'Title' }, { key: 'slug', label: 'Slug (auto if blank)' }, { key: 'category', label: 'Category' }, { key: 'author', label: 'Author' }, { key: 'cover', label: 'Cover image', type: 'image', folder: 'blogs' }, { key: 'read_time', label: 'Read time (min)', type: 'number' }, { key: 'excerpt', label: 'Excerpt', type: 'textarea' }, { key: 'content', label: 'Content (paragraphs separated by new lines)', type: 'textarea', rows: 10 }, { key: 'published', label: 'Published', type: 'boolean' }]}
-          defaults={{ published: true, read_time: 4, author: 'Astro Venus Editorial', cover: '/blog/b1.jpg', category: 'Astrology' }} search={['title', 'category', 'author']} />} />
+          defaults={{ published: true, read_time: 4, author: 'Astro Rahu Editorial', cover: '/blog/b1.jpg', category: 'Astrology' }} search={['title', 'category', 'author']} />} />
         <Route path="horoscope" element={<HoroscopePage />} />
         <Route path="notifications" element={<NotificationsPage />} />
         <Route path="support" element={<SupportPage />} />

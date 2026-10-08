@@ -34,7 +34,7 @@ export async function startRecharge(amount: number, provider: Provider): Promise
   return new Promise((resolve, reject) => {
     const rzp = new (window as any).Razorpay({
       key: order.key_id, order_id: order.order_id, amount: order.amount, currency: order.currency,
-      name: 'Astro Venus', description: 'Wallet recharge', prefill: { name: order.name, email: order.email, contact: order.phone },
+      name: 'Astro Rahu', description: 'Wallet recharge', prefill: { name: order.name, email: order.email, contact: order.phone },
       theme: { color: '#D9678A' },
       handler: async (resp: any) => {
         try { resolve(await api('/api/payments', { method: 'POST', body: { action: 'verify', payment_id: order.payment_id, ...resp } })); } catch (e) { reject(e); }

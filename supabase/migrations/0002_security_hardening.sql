@@ -1,4 +1,4 @@
--- ASTRO VENUS · security hardening migration
+-- Rahu Talk · security hardening migration
 -- Run once in Supabase Dashboard → SQL Editor (requires the postgres role).
 -- The app's API uses the service-role key, which bypasses RLS, so enabling RLS does not break the app.
 -- It closes direct table access with the public anon key (currently possible).

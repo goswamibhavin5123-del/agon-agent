@@ -41,7 +41,7 @@ export default function AstrologerProfile() {
   const share = async () => {
     const url = window.location.href;
     try {
-      if (navigator.share) await navigator.share({ title: `${a.name} on Astro Venus`, url });
+      if (navigator.share) await navigator.share({ title: `${a.name} on Astro Rahu`, url });
       else { await navigator.clipboard.writeText(url); toast('Profile link copied'); }
     } catch { /* cancelled */ }
   };

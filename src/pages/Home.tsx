@@ -79,7 +79,7 @@ export default function Home() {
             <div className="absolute inset-[9%] rounded-full bg-gradient-to-br from-blush via-pearl to-[#FFF3D9] blur-2xl opacity-80" />
             <div className="absolute inset-[12%] rounded-full p-[3px] bg-gold-grad shadow-lux">
               <div className="h-full w-full rounded-full overflow-hidden bg-pearl">
-                <img src={LOGO} alt="Astro Venus — goddess Venus with lotus, sun and the Venus planet" className="h-full w-full object-cover" style={{ transform: 'scale(1.08)', transformOrigin: '50% 38%' }} />
+                <img src={LOGO} alt="Astro Rahu — goddess Venus with lotus, sun and the Venus planet" className="h-full w-full object-cover" style={{ transform: 'scale(1.08)', transformOrigin: '50% 38%' }} />
               </div>
             </div>
             {firstOnline && (
@@ -238,7 +238,7 @@ export default function Home() {
         <div className="relative overflow-hidden rounded-[2rem] bg-rosegold-grad p-8 sm:p-12 lg:p-16 grid lg:grid-cols-2 gap-10 items-center">
           <StarField count={30} seed={5} color="#fff" />
           <div className="relative">
-            <p className="text-[11px] tracking-[0.35em] uppercase text-white/80 font-medium">Astro Venus app</p>
+            <p className="text-[11px] tracking-[0.35em] uppercase text-white/80 font-medium">Astro Rahu app</p>
             <h2 className="font-display text-3xl sm:text-5xl text-white mt-3 leading-tight">The stars, <span className="font-serif italic font-medium">in your pocket</span></h2>
             <p className="text-white/85 mt-4 max-w-md">Daily horoscope alerts, instant consultations, wallet top-ups and your saved Kundlis — wherever you are.</p>
             <ul className="mt-6 space-y-2 text-white/90 text-sm">
@@ -250,7 +250,7 @@ export default function Home() {
             <div className="relative w-[250px] h-[500px] rounded-[2.6rem] bg-plum-deep p-3 shadow-2xl rotate-[-4deg]">
               <div className="h-full w-full rounded-[2rem] bg-ivory overflow-hidden flex flex-col">
                 <div className="bg-plum-grad px-4 pt-6 pb-5 text-white">
-                  <p className="text-[10px] tracking-[0.3em] text-gold-light">ASTRO VENUS</p>
+                  <p className="text-[10px] tracking-[0.3em] text-gold-light">Astro Rahu</p>
                   <p className="font-serif text-xl mt-1">Good evening ✨</p>
                   <div className="mt-3 rounded-xl bg-white/10 px-3 py-2 text-xs flex justify-between"><span>Wallet</span><b className="text-gold-light">₹1,250</b></div>
                 </div>

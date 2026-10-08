@@ -18,7 +18,7 @@ export default function PanelShell({ items, title, subtitle, children, topRight,
       <Link to="/" className="flex items-center gap-3 px-5 h-[72px] shrink-0">
         <BrandMark size={38} />
         <span className="leading-none">
-          <span className="block font-display text-[0.98rem] font-semibold tracking-[0.14em] text-gold-grad">ASTRO VENUS</span>
+          <span className="block font-display text-[0.98rem] font-semibold tracking-[0.14em] text-gold-grad">Astro Rahu</span>
           <span className={`block text-[9px] tracking-[0.3em] uppercase mt-1 ${dark ? 'text-gold-light/70' : 'text-muted'}`}>{title}</span>
         </span>
       </Link>

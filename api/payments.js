@@ -103,7 +103,7 @@ export default async function handler(req, res) {
       const origin = `https://${req.headers['x-forwarded-host'] || req.headers.host}`;
       const s = await stripe('/checkout/sessions', {
         mode: 'payment', 'line_items[0][quantity]': '1', 'line_items[0][price_data][currency]': 'inr', 'line_items[0][price_data][unit_amount]': String(amount * 100),
-        'line_items[0][price_data][product_data][name]': 'Astro Venus wallet recharge', client_reference_id: String(p.id), 'metadata[payment_id]': String(p.id),
+        'line_items[0][price_data][product_data][name]': 'Astro Rahu wallet recharge', client_reference_id: String(p.id), 'metadata[payment_id]': String(p.id),
         customer_email: profile.email || '', success_url: `${origin}/dashboard/wallet?stripe_payment=${p.id}`, cancel_url: `${origin}/dashboard/wallet?stripe_cancelled=${p.id}`,
       });
       await supabase.from('payments').update({ provider_order_id: s.id }).eq('id', p.id);

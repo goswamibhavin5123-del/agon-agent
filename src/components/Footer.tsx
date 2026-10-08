@@ -37,9 +37,9 @@ export default function Footer() {
         <div className="grid gap-10 lg:grid-cols-[1.4fr_repeat(4,1fr)]">
           <div>
             <Brand light />
-            <p className="mt-5 text-sm leading-relaxed text-white/65 max-w-xs">Guided by stars, empowered by you. Astro Venus connects you with verified Vedic astrologers, tarot readers and numerologists — privately, instantly, beautifully.</p>
+            <p className="mt-5 text-sm leading-relaxed text-white/65 max-w-xs">Guided by stars, empowered by you. Astro Rahu connects you with verified Vedic astrologers, tarot readers and numerologists — privately, instantly, beautifully.</p>
             <div className="mt-5 space-y-2 text-sm text-white/65">
-              <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold-light" /> care@astrovenus.com</p>
+              <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold-light" /> care@AstroRahu.com</p>
               <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold-light" /> +91 7698 601 309</p>
               <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold-light" /> Bengaluru, India</p>
             </div>
@@ -61,7 +61,7 @@ export default function Footer() {
           </div>
           <StoreBadges />
         </div>
-        <p className="mt-8 text-xs text-white/45 text-center lg:text-left">© {new Date().getFullYear()} Astro Venus. Astrological guidance is for insight and reflection and is not a substitute for professional medical, legal or financial advice.</p>
+        <p className="mt-8 text-xs text-white/45 text-center lg:text-left">© {new Date().getFullYear()} Astro Rahu. Astrological guidance is for insight and reflection and is not a substitute for professional medical, legal or financial advice.</p>
       </div>
     </footer>
   );

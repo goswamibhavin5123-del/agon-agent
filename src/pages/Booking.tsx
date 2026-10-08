@@ -101,7 +101,7 @@ export default function Booking() {
     if (!done) return;
     const s = new Date(done.scheduled_at); const e = new Date(s.getTime() + done.duration * 60000);
     const f = (d: Date) => d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
-    const body = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nUID:${done.reference}@astrovenus\nDTSTART:${f(s)}\nDTEND:${f(e)}\nSUMMARY:Astro Venus · ${MODES[mode].label} with ${a.name}\nDESCRIPTION:Booking ${done.reference}\nEND:VEVENT\nEND:VCALENDAR`;
+    const body = `BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\nUID:${done.reference}@AstroRahu\nDTSTART:${f(s)}\nDTEND:${f(e)}\nSUMMARY:Astro Rahu · ${MODES[mode].label} with ${a.name}\nDESCRIPTION:Booking ${done.reference}\nEND:VEVENT\nEND:VCALENDAR`;
     const url = URL.createObjectURL(new Blob([body], { type: 'text/calendar' }));
     const link = document.createElement('a'); link.href = url; link.download = 'astro-venus-session.ics'; link.click(); URL.revokeObjectURL(url);
   };
@@ -266,7 +266,7 @@ export default function Booking() {
                     <p className="label">Payment</p>
                     <div className="flex items-center gap-3 rounded-2xl border border-rose bg-blush/40 p-4">
                       <span className="h-10 w-10 rounded-xl flex items-center justify-center bg-rose-grad text-white"><Wallet className="h-5 w-5" /></span>
-                      <span className="flex-1"><span className="block font-medium">Astro Venus Wallet</span><span className={`block text-xs ${balance < total ? 'text-danger' : 'text-muted'}`}>Balance {inr(balance)}{balance < total ? ` · ${inr(total - balance)} short` : ''}</span></span>
+                      <span className="flex-1"><span className="block font-medium">Astro Rahu Wallet</span><span className={`block text-xs ${balance < total ? 'text-danger' : 'text-muted'}`}>Balance {inr(balance)}{balance < total ? ` · ${inr(total - balance)} short` : ''}</span></span>
                     </div>
                     {balance < total && (
                       <div className="mt-3 rounded-2xl border border-line p-4">

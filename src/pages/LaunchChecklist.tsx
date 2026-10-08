@@ -125,10 +125,10 @@ const SECTIONS: Section[] = [
     { t: 'GST registration, invoicing and TDS/TCS obligations for marketplace payouts', p: 'P0', s: 'todo' },
     { t: '18+ age gate; no medical, legal or financial guarantees in marketing or astrologer claims', p: 'P0', s: 'done' },
     { t: 'GDPR basics if serving UK/EU users (Stripe international)', p: 'P2', s: 'todo' },
-    { t: 'Register the ASTRO VENUS trademark and secure domain and social handles', p: 'P1', s: 'todo' },
+    { t: 'Register the Astro Rahu trademark and secure domain and social handles', p: 'P1', s: 'todo' },
   ] },
   { key: 'hosting', title: 'Hosting & infrastructure', icon: Cloud, intro: 'Frontend and API on Vercel; database, auth and storage on Supabase.', items: [
-    { t: 'Vercel Pro with custom domain (astrovenus.com), HTTPS, preview deployments per branch', p: 'P0', s: 'partial' },
+    { t: 'Vercel Pro with custom domain (AstroRahu.com), HTTPS, preview deployments per branch', p: 'P0', s: 'partial' },
     { t: 'Proper SPA rewrites in vercel.json so deep links return 200 (currently served through a 404.html fallback)', p: 'P0', s: 'todo' },
     { t: 'Supabase Pro in Mumbai, point-in-time recovery, separate staging and production projects', p: 'P0', s: 'todo' },
     { t: 'Image optimisation (WebP/AVIF, resized astrologer photos) and CDN caching for static assets', p: 'P1', s: 'todo' },
@@ -181,7 +181,7 @@ export default function LaunchChecklist() {
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-14">
           <p className="text-[11px] tracking-[0.35em] uppercase text-gold-light font-medium">Production readiness</p>
           <h1 className="font-display text-4xl sm:text-5xl text-white mt-3">Launch <span className="font-serif italic font-medium text-gold-grad">checklist</span></h1>
-          <p className="text-white/65 mt-3 max-w-2xl">Everything ASTRO VENUS needs before real users and real money. Status reflects what is built in this app today; tick items as your team completes them (saved in this browser).</p>
+          <p className="text-white/65 mt-3 max-w-2xl">Everything Astro Rahu needs before real users and real money. Status reflects what is built in this app today; tick items as your team completes them (saved in this browser).</p>
           <div className="grid grid-cols-3 gap-3 mt-8 max-w-xl">
             <div className="rounded-2xl bg-white/10 border border-white/10 p-4"><p className="font-display text-3xl text-gold-grad">{pct}%</p><p className="text-[11px] uppercase tracking-wider text-white/60">Overall</p></div>
             <div className="rounded-2xl bg-white/10 border border-white/10 p-4"><p className="font-display text-3xl text-white">{p0Done}/{p0.length}</p><p className="text-[11px] uppercase tracking-wider text-white/60">P0 blockers</p></div>

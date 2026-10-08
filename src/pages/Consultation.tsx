@@ -26,7 +26,7 @@ function VoiceBubble({ url, duration, mine }: { url: string; duration?: number; 
   );
 }
 
-const END_TEXT: Record<string, string> = { balance: 'Ended because your wallet balance ran out.', disconnected: 'Ended because the connection was lost.', no_answer: 'The astrologer did not connect — you were not charged.', time_up: 'Your booked time is complete.', astrologer: 'Ended by the astrologer.', admin: 'Ended by Astro Venus support.' };
+const END_TEXT: Record<string, string> = { balance: 'Ended because your wallet balance ran out.', disconnected: 'Ended because the connection was lost.', no_answer: 'The astrologer did not connect — you were not charged.', time_up: 'Your booked time is complete.', astrologer: 'Ended by the astrologer.', admin: 'Ended by Astro Rahu support.' };
 
 export default function Consultation() {
   const { id } = useParams();
