@@ -12,7 +12,7 @@ export const COMPANY = {
   address: 'Registered office address TO BE COMPLETED, Bengaluru, Karnataka, India',
   cin: 'CIN TO BE COMPLETED',
   gstin: 'GSTIN TO BE COMPLETED',
-  supportEmail: 'care@AstroRahu.com',
+  supportEmail: 'rahutalkastro@gmail.com',
   privacyEmail: 'privacy@AstroRahu.com',
   grievanceOfficer: 'Grievance Officer (name TO BE COMPLETED)',
   grievanceEmail: 'grievance@AstroRahu.com',

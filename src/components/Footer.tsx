@@ -39,7 +39,7 @@ export default function Footer() {
             <Brand light />
             <p className="mt-5 text-sm leading-relaxed text-white/65 max-w-xs">Guided by stars, empowered by you. Astro Rahu connects you with verified Vedic astrologers, tarot readers and numerologists — privately, instantly, beautifully.</p>
             <div className="mt-5 space-y-2 text-sm text-white/65">
-              <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold-light" /> care@AstroRahu.com</p>
+              <p className="flex items-center gap-2"><Mail className="h-4 w-4 text-gold-light" /> rahutalkastro@gmail.com</p>
               <p className="flex items-center gap-2"><Phone className="h-4 w-4 text-gold-light" /> +91 7698 601 309</p>
               <p className="flex items-center gap-2"><MapPin className="h-4 w-4 text-gold-light" /> Bengaluru, India</p>
             </div>
