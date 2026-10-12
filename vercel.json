@@ -1,1 +1,14 @@
-{"rewrites":[{"source":"/((?!assets/).*)","destination":"/index.html"}]}
+﻿{
+    "env":  {
+                "NEXT_PUBLIC_SUPABASE_URL": "https://kzeasfmzvfmiciyvpkwm.supabase.co",
+                "NEXT_PUBLIC_SUPABASE_ANON_KEY":  "sb_publishable_uQoVge66WI7tCj8KXvYiCQ_zj_k1jDC",
+                "SUPABASE_SERVICE_ROLE_KEY":  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt6ZWFzZm16dmZtaWNpeXZwa3dtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc5MTY4OTc3OSwiZXhwIjoyMTA3MjY1Nzc5fQ.iY4D5G7NuiZtFvH6hUcBCLxCg50k4OIxWEHecx0KNAQ",
+                "VITE_SUPABASE_URL":  "https://kzeasfmzvfmiciyvpkwm.supabase.co",
+                "VITE_SUPABASE_ANON_KEY":  "sb_publishable_uQoVge66WI7tCj8KXvYiCQ_zj_k1jDC",
+                "VITE_GOOGLE_CLIENT_ID":  "588657110132-gi9vmd7spkiq2pci1ifj71kq8mp8rh1n.apps.googleusercontent.com",
+                "VITE_GOOGLE_AUTH_PROXY":  "https://rahutalk.com/api/auth/google",
+                "FULLSTACK_PROJECT_REF":  "mpnbcykxhfbjhuqislp"
+            
+            }
+}
+ 
