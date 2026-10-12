@@ -11,6 +11,7 @@ import CallRoom from '../../components/CallRoom';
 import { inr, fmtDateTime, fmtDate, fmtTime, timeAgo, fmtDuration, MODES, DAY_LABEL } from '../../lib/format';
 import { EXPERTISE, LANGUAGES } from '../Astrologers';
 import { g, SIGNS } from '../../lib/zodiac';
+import GoLive from "../../components/GoLive";
 
 /** The astrologer workspace is bound to the signed-in account; the server derives the profile from the session. */
 export default function AstroPanel() {
@@ -36,6 +37,7 @@ function Workspace({ id, onSignOut }: { id: number; onSignOut: () => Promise<voi
     { to: '/astro-panel', label: 'Overview', icon: LayoutDashboard, end: true },
     { to: '/astro-panel/incoming', label: 'Live Sessions', icon: Radio, badge: data.live.length || undefined },
     { to: '/astro-panel/bookings', label: 'Bookings', icon: CalendarDays, badge: data.bookings.filter((b: any) => b.status === 'upcoming').length || undefined },
+    { to: '/astro-panel/live', label: 'Go Live', icon: Radio },
     { to: '/astro-panel/availability', label: 'Availability', icon: Clock },
     { to: '/astro-panel/consultations', label: 'Consultations', icon: History },
     { to: '/astro-panel/earnings', label: 'Earnings & Wallet', icon: IndianRupee },
@@ -55,6 +57,7 @@ function Workspace({ id, onSignOut }: { id: number; onSignOut: () => Promise<voi
         <Route index element={<Overview {...ctx} />} />
         <Route path="incoming" element={<Incoming {...ctx} />} />
         <Route path="bookings" element={<ABookings {...ctx} />} />
+        <Route path="live" element={<GoLive />} />
         <Route path="availability" element={<Availability {...ctx} />} />
         <Route path="consultations" element={<Consultations {...ctx} />} />
         <Route path="earnings" element={<Earnings {...ctx} />} />
