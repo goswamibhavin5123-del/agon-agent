@@ -1,4 +1,5 @@
-﻿{
+﻿
+{
   "buildCommand": "tsc -b && vite build && shx cp dist/index.html dist/404.html",
   "outputDirectory": "dist",
   "rewrites": [
